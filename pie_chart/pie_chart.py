@@ -63,9 +63,11 @@ class PieChartJSPlugin(BasePlugin):
             "title": kwargs.get("title", ""),
             "radius": kwargs.get("radius", 30),
             "chartName": kwargs.get("chartName", ""),
+            "showItemBox": kwargs.get("showItemBox", True),
             "legendOrient": kwargs.get("legendOrient", "horizontal"),
             "legendPosition": kwargs.get("legendPosition", "right"),
-            "selectedMode": kwargs.get("selectedMode", "single")
+            "selectedMode": kwargs.get("selectedMode", "single"),
+            "richFormatter": kwargs.get("richFormatter", True)
         }
         codes = self.autogen_js(js_lst, 'PieChartViewer', configs=configs,
                                 div_id=temp_div_id)

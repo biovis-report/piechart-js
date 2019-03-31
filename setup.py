@@ -1,9 +1,10 @@
 from setuptools import setup, find_packages
+from pie_chart.version import get_version
 
 
 setup(
-    name='pie-chart-plugin',
-    version='0.1.0',
+    name='pie-chart-js-plugin',
+    version=get_version(),
     description='An choppy plugin to draw an interactive pie chart.',
     long_description='The pie chart plugin will draw an interactive pie chart by using echarts library.',
     keywords='choppy plugin pie-chart interactive',
@@ -14,7 +15,7 @@ setup(
     python_requires='>=3.4',
     include_package_data=True,
     install_requires=[
-        'mk_media_extension>=v0.1.0',
+        'mk-media-extension>=0.1.0'
     ],
     classifiers=[
         'Development Status :: 4 - Beta',
