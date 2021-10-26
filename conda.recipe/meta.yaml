@@ -1,12 +1,9 @@
-# {% set data = load_setup_py_data() %}
-{% set version = '0.1.1' %}
-{% set url = 'https://choppy.3steps.cn/go-choppy/pie-chart-js-plugin/' %}
-{% set description = 'An choppy plugin to draw an interactive pie chart.' %}
-{% set long_description = 'The pie chart plugin will draw an interactive pie chart by using echarts library.' %}
+{% set data = load_setup_py_data() %}
+
 
 package:
-  name: pie-chart-js-plugin
-  version: {{ version }}
+  name: pie-chart-js
+  version: {{ data.version }}
 
 
 source:
@@ -15,8 +12,6 @@ source:
 
 build:
   include_recipe: True
-  entry_points:
-    - pie-chart-js = pie_chart.pie_chart:PieChartJSPlugin
 
 
 requirements:
@@ -26,19 +21,18 @@ requirements:
 
   run:
     - python
-    - mk-media-extension>=0.1.0
 
-# test:
-#   imports:
-#     - pie_chart
+test:
+  imports:
+    - pie_chart
 
 about:
-  home: {{ url }}
-  license: BSD 3-Clause
+  home: {{ data.url }}
+  license: MIT
   license_file: LICENSE.md
-  license_family: BSD
+  license_family: MIT
 
-  summary: {{ description }}
-  description: {{ long_description }}
+  summary: {{ data.description }}
+  description: {{ data.long_description }}
   doc_url: http://docs.3steps.cn
-  dev_url: {{ url }}
+  dev_url: {{ data.url }}

@@ -3,20 +3,17 @@ from pie_chart.version import get_version
 
 
 setup(
-    name='pie-chart-js-plugin',
+    name='pie-chart-js',
     version=get_version(),
-    description='An choppy plugin to draw an interactive pie chart.',
+    description='An biovis plugin to draw an interactive pie chart.',
     long_description='The pie chart plugin will draw an interactive pie chart by using echarts library.',
-    keywords='choppy plugin pie-chart interactive',
-    url='https://choppy.3steps.cn/go-choppy/pie-chart-plugin/',
+    keywords='biovis-plugin, pie-chart, interactive',
+    url='https://github.com/biovis-report/pie-chart-js',
     author='Jingcheng Yang',
     author_email='yjcyxky@163.com',
     license='MIT',
     python_requires='>=3.4',
     include_package_data=True,
-    install_requires=[
-        'mk-media-extension>=0.1.0'
-    ],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',
@@ -31,7 +28,7 @@ setup(
     ],
     packages=find_packages(),
     entry_points={
-        'choppy.plugins': [
+        'biovis.plugins': [
             'pie-chart-js = pie_chart.pie_chart:PieChartJSPlugin'
         ]
     }
