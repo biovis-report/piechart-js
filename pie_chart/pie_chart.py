@@ -2,8 +2,8 @@
 from __future__ import unicode_literals
 
 import os
-from mk_media_extension.plugin import BasePlugin
-from mk_media_extension.utils import get_candidate_name
+from biovis_media_extension.plugin import BasePlugin
+from biovis_media_extension.utils import get_candidate_name
 
 
 class PieChartJSPlugin(BasePlugin):

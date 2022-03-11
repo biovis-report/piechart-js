@@ -1,18 +1,17 @@
-## `pie-chart-js[choppy-report-plugin]`
+## `pie-chart-js[biovis-report-plugin]`
 ### Description
 Interactive pie chart. It is based on echarts.
 
 ### Example Data
 ```
-group    subgroup    value
-直达        直达        335
-营销广告    邮件营销    310
-营销广告    联盟广告    234
-营销广告    视频广告    135
-搜索引擎    百度       1048
-搜索引擎    谷歌       251
-搜索引擎    必应       147
-搜索引擎    其他       102
+group,subgroup,value
+Marketing Advertising,Email Marketing,310
+Marketing Advertising,Affiliate Advertising,234
+Marketing Advertising,Affiliate Advertising,135
+Search Engine,Baidu,1048
+Search Engine,Google,251
+Search Engine,Bing,147
+Search Engine,Others,102
 ```
 
 ### Usage
